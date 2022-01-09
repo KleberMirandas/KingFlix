@@ -10,6 +10,22 @@ body
     color: white;
 
 }
+
+img
+{
+    display: block;
+    max-width: 100%
+
+}
+
+
+.container
+{
+   max-width: 1130px;
+   margin: 0 auto;
+
+
+}
 .header
 {
     position: absolute;
@@ -36,6 +52,7 @@ body
 
 .main
 {
+    padding-top: 4rem ;
     height: 785px;
     background: url("../img/bg.jpg")center;
     display: flex;
@@ -43,6 +60,7 @@ body
     justify-content: center;
     text-align: center;
     position: relative;
+    box-sizing:border-box ;
 }
 .main-child
 {
@@ -61,9 +79,69 @@ body
 .main span
 {
     font-size: 26px;
+    margin-top: 10px;
 
 
 }
+
+.faq
+{
+    width: 100%;
+}
+
+.faq h1
+{
+    text-align: center;
+
+}
+
+.faq-list
+{
+    margin: 50px auto;
+    max-width: 815px;
+    font-size: 26px;
+}
+.faq-question, .faq-answer
+{
+    background: #303030;
+    
+
+
+}
+.faq-question
+{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor:pointer;
+    margin-top: 8px;
+    margin-bottom: 1px;
+
+}
+
+.faq-question::after
+{
+    content: " ";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/fechar.svg")no-repeat center center;
+    transform: rotate(45deg);
+}
+
+.faq-answer >div
+{
+   padding: 30px;
+
+}
+
+
+
+
+
+
+
 .form-cta 
 {
     display: grid;
@@ -118,4 +196,100 @@ body
     left: 0;
     right: 0;
     bottom: 0;
+}
+.section
+{
+    background: black;
+    padding: 3rem 0;
+    border-top: 8px solid #222;
+   
+
+}
+.dowload .grid > div:first-child
+{
+    order: 2;
+
+}
+.dowload .img-tv
+{
+    order: 1;
+
+
+}
+
+
+.section h1
+{
+    font-size: 50px;
+    margin-bottom: 16px;
+
+}
+
+.section p
+{
+    font-size: 26px;
+    
+}
+
+.grid 
+{
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
+}
+
+.img-tv
+{
+  position: relative;
+  
+}
+.img-tv img
+{
+    position: relative;
+    width: 77%;
+    height: 54%;
+    z-index: 1;
+}
+
+.video-tv
+{
+    
+    position: absolute;
+    width: 60%;
+    height: 63%;
+    
+    top: 48px;
+    left: 36px;
+    
+
+
+}
+.device-pile .video-tv
+{
+    width: 328px;
+    height: 141px;
+    top: 33px;
+    left: 40px;
+
+}
+.footer .form-cta
+{
+    margin-top: 0;
+}
+.footer
+{
+    padding: 4rem 0 2rem 0;
+    border-top: 8px solid #222;
+    background: black;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+
+}
+
+.footer p 
+{
+    margin-top: 2rem;
+    color: #757575;
+    font-size: 13px;
 }
